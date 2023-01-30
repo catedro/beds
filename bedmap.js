@@ -30,51 +30,7 @@ function doThis(){
     }
 
 
-function showDesktop(){
-    var nSec=Z[0].S;
-     var s;
-     var aChk=[];
-    
-     for (let i=0; i<10;i++){
-      if (document.getElementById(i).checked){ aChk.push(document.getElementById(i).name);}
-     }
-    
-     s='<div class="main-container"><ul class="columns">';
-          
-     for (let x=0; x<Z.length;x++){
-      if(Z[x].S != nSec){nSec = Z[x].S;} 
-      if(aChk.includes(nSec)){
-        if(document.getElementById("huecos").checked){
-          if((Z[x].C-Z[x].O)!=0){
-            s =s+Room(x);    
-          }
-        }else{
-          s=s+Room(x);
-        }
-      }
-     document.getElementById("frm").innerHTML = s+'</ul></div>';
-     }
-    }
+function showDesktop(){   
+}
       
-    function Room(r){
-    var s;
-    s='<li class="column S'+Z[r].S[0]+'"><div class="hd h'+(Z[r].C-Z[r].O)+'"><b>'+ Z[r].H+'</b> ('+Z[r].S+')</div><ul class="room" id="'+Z[r].H+'">';
-    for(let j=0;j<Z[r].C;j++){
-      var s1,s2,s3,s4,b;
-    
-      if (j<Z[r].P.length){ s1= Z[r].P[j].N; s2= Z[r].P[j].D; s3= Z[r].P[j].A; s4=Z[r].P[j].I; b=j;}
-      else{s1=''; s2='';s3='';s4='';b=-1;}  
-      s=s+'<li class="bed '+ ((s3>65 || s4>45) ? 'l1 ': s4>30 ? 'l0 ':'')+'"><div Id="'+r+'-'+b+'" onMouseEnter="fME(this)" onMouseOut="fMO(this)">'+s1+'</div><div Id="'+r+'-'+b+'" onMouseEnter="fME(this)" onMouseOut="fMO(this)"><b>'+s2+'</b></div></li>';
-    }
-    return s+'</ul></li>';
-    }
-    
- function fME(x) {
-      
-      }
-    
-    function fMO(x) {
-      document.getElementById("Pac").innerHTML= ''; 
-      document.getElementById("aBtn").innerHTML= ''; 
-    }    
-    
+   
