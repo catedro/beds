@@ -1,15 +1,8 @@
 
-
-function Dothis(){
-  
-  document.write('hola');
-}
-
 function Chk(n,s){
   return '<label><input onclick="Show()" type="checkbox" Id='+n+' name='+s+' checked>'+s+'</label>';
 }  
     
-
 function fME(x) {
     var nR,nB;
     nR=(x.id).substr(0,(x.id).indexOf('-'));
