@@ -1,4 +1,8 @@
 
+function doThis(){
+  document.write('hola');
+}
+
 function Chk(n,s){
   return '<label><input onclick="Show()" type="checkbox" Id='+n+' name='+s+' checked>'+s+'</label>';
 }  
