@@ -29,5 +29,5 @@ function setAllSectors(){
   for (let i=0; i<10;i++){
     document.getElementById(i).checked = document.getElementById('Todo').checked;
   }
-  Show(); 
+  showDesktop(); 
 }
