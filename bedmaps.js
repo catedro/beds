@@ -2,9 +2,6 @@ function doThis(){
 document.write('holaaaa');
 }
 
-function showBar(){
-document.write('hola2');
-}
 
 function showTopBar(){
   document.write('asi es');  
