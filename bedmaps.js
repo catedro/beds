@@ -2,6 +2,10 @@ function doThis(){
 document.write('hola');
 }
 
+function showBar(){
+document.write('hola2');
+}
+
 function showTopBar(){
   document.write('asi es');  
     /*
