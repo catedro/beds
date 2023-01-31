@@ -4,8 +4,7 @@ document.write('holaaaa');
 
 
 function showTopBar(){
-  document.write(
-    'div class="cout"><div class="c1"><label id="label"><input type="checkbox" Id="Todo" onclick="setAll()" checked><b>Marcar Todo</b> </label><br/>'+
+ document.write('<div class="cout"><div class="c1"><label id="label"><input type="checkbox" Id="Todo" onclick="chkAll()" checked><b>Marcar Todo</b> </label><br/>'+
     '<label id="label"><input onclick="showDesktop()" type="checkbox" Id="huecos" name="huecos"><b>Camas libres</b> </label></div>'+
     '<div class="c2"><label><input onclick="Show()" type="checkbox" Id="0" name="1-0" checked>1-0</label>'+
     '<label><input onclick="showDesktop()" type="checkbox" Id="1" name="1-A" checked>1-A</label>'+
@@ -19,7 +18,6 @@ function showTopBar(){
     '<label><input onclick="showDesktop()" type="checkbox" Id="9" name="4-B" checked>1-B</label>'+
     '</div><div class="c22" Id="S1"></div><div class="c23" Id="S2"></div><div class="c24" Id="S3"></div>'+
     '<div class="c25" Id="S4"></div><div class="c6" Id="Pac"></div><div class="c7" Id="Btn"></div></div>  <div Id="frm"></div>');
-
 }
 
 function showDesktop(){
